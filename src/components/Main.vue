@@ -378,7 +378,11 @@
         <p class="font-weight-bold text-h5">NOTES</p>
         <p>
           You can download the original rules posted in Slack
-          <a href="/files/f3lgrules.pdf" download>here</a>
+          <a
+            href="https://drive.google.com/file/d/1umKEaqDtspHJiHN5WLtdtG4puinnLiit/view?usp=drivesdk"
+            target="_blank"
+            >here</a
+          >
         </p>
         <p>
           You are only allowed to complete each Power event one time per week.
