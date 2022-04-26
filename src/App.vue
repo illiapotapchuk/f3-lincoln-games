@@ -1,28 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app color="blue-grey" dark>
+      <div class="d-flex align-center">
+        <v-img
+          alt="Logo"
+          class="shrink mr-2"
+          contain
+          src="./assets/f3naperville-logo.png"
+          transition="scale-transition"
+          width="80"
+        />
+
+        <v-img
+          alt="F3 Naperville"
+          class="shrink mt-1 hidden-sm-and-down"
+          contain
+          min-width="100"
+          src="./assets/f3naperville-text.png"
+          width="200"
+        />
+      </div>
+    </v-app-bar>
+
+    <v-main>
+      <Main />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from "./components/Main";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    Main,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
